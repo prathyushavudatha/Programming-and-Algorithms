@@ -1,0 +1,6 @@
+
+For compiling the program
+gcc vudatha_prathyusha_program1.c -o vudatha_prathyusha_program1.out
+
+For running the program
+./vudatha_prathyusha_program1.out
