@@ -1,0 +1,15 @@
+
+all: compile run checkmem clean
+
+compile: profie.c program5.c
+	gcc -c profile.c program5.c
+	gcc -o program5 profile.o program5.o
+
+run: program5
+	./program5
+
+checkmem: 
+	valgrind ./program5
+
+clean:
+	rm program5 profile.o program5.o
